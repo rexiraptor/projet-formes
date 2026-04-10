@@ -37,9 +37,9 @@ public class SessionJeu {
         demarrerMancheSuivante();
     }
 
-    public boolean demarrerMancheSuivante() {
+    public void demarrerMancheSuivante() {
         if (mancheCourante >= nombreManches) {
-            return false;
+            return ;
         }
 
         jeuCourant = new Jeu(modeJeu);
@@ -52,7 +52,6 @@ public class SessionJeu {
         }
 
         mancheCourante++;
-        return true;
     }
 
     public void terminerManche(double largeurZone, double hauteurZone) {
@@ -85,10 +84,6 @@ public class SessionJeu {
 
     public int getMancheCourante() {
         return mancheCourante;
-    }
-
-    public List<Double> getScores() {
-        return scores;
     }
 
     public Jeu getJeuCourant() {

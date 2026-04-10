@@ -32,7 +32,4 @@ public class Joueur {
         return nom;
     }
 
-    public List<Double> getScores() {
-        return scores;
-    }
 }
