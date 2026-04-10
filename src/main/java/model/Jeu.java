@@ -84,10 +84,7 @@ public class Jeu implements Observable {
         notifierObservateurs();
     }
 
-    public void setModeJeu(ModeJeu modeJeu) {
-        this.modeJeu = modeJeu;
-        demarrerPartie();
-    }
+
 
     public ModeJeu getModeJeu() {
         return modeJeu;

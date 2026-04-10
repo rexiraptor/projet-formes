@@ -19,18 +19,6 @@ public class GroupeFormes {
         return Collections.unmodifiableList(formes);
     }
 
-    public void clear() {
-        formes.clear();
-    }
-
-    public double aireTotale() {
-        double total = 0.0;
-        for (Forme forme : formes) {
-            total += forme.aire();
-        }
-        return total;
-    }
-
     public Forme trouverForme(Point p) {
         for (int i = formes.size() - 1; i >= 0; i--) {
             if (formes.get(i).contient(p)) {
