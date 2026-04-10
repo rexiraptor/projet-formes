@@ -48,7 +48,7 @@ public class GenerateurFichierExemple {
             groupes.add(groupe);
         }
 
-        GenerationFichierStrategy generation = new GenerationFichierStrategy("ensembles_formes.ser");
+        GenerationFichierStrategy generation = new GenerationFichierStrategy("dist/ensembles_formes.ser");
         generation.sauvegarder(groupes);
 
     }
