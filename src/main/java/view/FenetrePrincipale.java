@@ -233,7 +233,7 @@ public class FenetrePrincipale extends JFrame {
                     mode,
                     nbManches,
                     TypeSession.FICHIER,
-                    new GenerationFichierStrategy("ensembles_formes.ser")
+                    new GenerationFichierStrategy("dist/ensembles_formes.ser")
             );
         } else {
             s = new SessionJeu(mode, nbManches);
